@@ -1,1 +1,6 @@
-<Solution />
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ApiWar.Application/ApiWar.Application.csproj" />
+    <Project Path="src/ApiWar.Infrastructure/ApiWar.Infrastructure.csproj" />
+  </Folder>
+</Solution>
