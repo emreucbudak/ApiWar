@@ -1,6 +1,5 @@
 <Solution>
-  <Folder Name="/src/">
-    <Project Path="src/ApiWar.Application/ApiWar.Application.csproj" />
-    <Project Path="src/ApiWar.Infrastructure/ApiWar.Infrastructure.csproj" />
-  </Folder>
+  <Project Path="ApiWar.Application/ApiWar.Application.csproj" />
+  <Project Path="ApiWar.Console/ApiWar.Console.csproj" />
+  <Project Path="ApiWar.Infrastructure/ApiWar.Infrastructure.csproj" />
 </Solution>
