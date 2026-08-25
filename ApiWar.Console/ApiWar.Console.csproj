@@ -1,9 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <ItemGroup>
-    <ProjectReference Include="..\ApiWar.Application\ApiWar.Application.csproj" />
-    <ProjectReference Include="..\ApiWar.Infrastructure\ApiWar.Infrastructure.csproj" />
-  </ItemGroup>
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
