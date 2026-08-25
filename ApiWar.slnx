@@ -1,5 +1,5 @@
 <Solution>
   <Project Path="ApiWar.Application/ApiWar.Application.csproj" />
-  <Project Path="ApiWar.Console/ApiWar.Console.csproj" />
+  <Project Path="ApiWar.Console/ApiWar.Console.csproj" Id="6446a5bd-bf7d-44ec-8625-6e281b76abc1" />
   <Project Path="ApiWar.Infrastructure/ApiWar.Infrastructure.csproj" />
 </Solution>
