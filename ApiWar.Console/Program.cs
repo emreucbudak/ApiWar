@@ -16,6 +16,28 @@ AnsiConsole.Write(
 
 AnsiConsole.WriteLine();
 
+AnsiConsole.Write(
+    new Align(
+        new Markup("[bold]ApiWar'a hoş geldiniz![/]"),
+        HorizontalAlignment.Center));
+
+AnsiConsole.Write(
+    new Align(
+        new Markup("[grey]ApiWar, web sitelerinizi ve API'lerinizi test etmek için geliştirilmiş bir araçtır.[/]"),
+        HorizontalAlignment.Center));
+
+AnsiConsole.Write(
+    new Align(
+        new Markup("[dim]Yalnızca izinli testlerde kullanılmalıdır. Yasa dışı kullanımlardan geliştirici sorumlu değildir.[/]"),
+        HorizontalAlignment.Center));
+
+AnsiConsole.Write(
+    new Align(
+        new Markup("Başlamak için [bold deepskyblue1]/başlat[/] yazın."),
+        HorizontalAlignment.Center));
+
+AnsiConsole.WriteLine();
+
 while (true)
 {
     var selectedTestType = AnsiConsole.Prompt(
