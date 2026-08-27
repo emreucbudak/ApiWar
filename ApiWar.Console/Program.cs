@@ -1,5 +1,10 @@
 ﻿using Spectre.Console;
 
+using ApiWar.Application.Testing.Factories;
+using ApiWar.Infrastructure.Testing.Factories;
+
+ITestFacadeFactory testFacadeFactory = new TestFacadeFactory();
+
 AnsiConsole.WriteLine();
 
 AnsiConsole.Write(
@@ -20,7 +25,7 @@ while (true)
             .AddChoices("API", "Web"));
 
     var testType = selectedTestType == "API" ? "api" : "web";
-    var facade = ApiWar.Application.Testing.TestFacadeFactory.Create(testType);
+    var facade = testFacadeFactory.Create(testType);
     var options = facade.GetOptions();
 
     var selectedOption = AnsiConsole.Prompt(

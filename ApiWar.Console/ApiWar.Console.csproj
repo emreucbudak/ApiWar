@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ApiWar.Application\ApiWar.Application.csproj" />
+    <ProjectReference Include="..\ApiWar.Infrastructure\ApiWar.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

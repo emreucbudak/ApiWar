@@ -1,6 +1,6 @@
-using ApiWar.Application;
+using ApiWar.Application.Reporting;
 
-namespace ApiWar.Infrastructure;
+namespace ApiWar.Infrastructure.Reporting;
 
 public sealed class DocsWriter : IDocsWriter
 {

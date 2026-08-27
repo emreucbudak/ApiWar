@@ -1,4 +1,6 @@
-namespace ApiWar.Application.Testing;
+using ApiWar.Application.Testing.Facades;
+
+namespace ApiWar.Infrastructure.Testing.Facades;
 
 public sealed class WebTestFacade : ITestFacade
 {

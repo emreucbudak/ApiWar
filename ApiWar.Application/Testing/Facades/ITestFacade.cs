@@ -1,4 +1,4 @@
-namespace ApiWar.Application.Testing;
+namespace ApiWar.Application.Testing.Facades;
 
 public interface ITestFacade
 {

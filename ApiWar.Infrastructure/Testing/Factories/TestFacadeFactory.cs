@@ -1,8 +1,12 @@
-namespace ApiWar.Application.Testing;
+using ApiWar.Application.Testing.Facades;
+using ApiWar.Application.Testing.Factories;
+using ApiWar.Infrastructure.Testing.Facades;
 
-public static class TestFacadeFactory
+namespace ApiWar.Infrastructure.Testing.Factories;
+
+public sealed class TestFacadeFactory : ITestFacadeFactory
 {
-    public static ITestFacade Create(string testType)
+    public ITestFacade Create(string testType)
     {
         ArgumentNullException.ThrowIfNull(testType);
 

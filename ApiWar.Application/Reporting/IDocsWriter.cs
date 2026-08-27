@@ -1,4 +1,4 @@
-namespace ApiWar.Application;
+namespace ApiWar.Application.Reporting;
 
 public interface IDocsWriter
 {
