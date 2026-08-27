@@ -11,7 +11,10 @@ AnsiConsole.Write(
 
 AnsiConsole.WriteLine();
 
-_ = AnsiConsole.Prompt(
-    new TextPrompt<string>("[bold deepskyblue1]➜[/] ")
-        .PromptStyle(new Style(Color.White))
-        .AllowEmpty());
+while (true)
+{
+    _ = AnsiConsole.Prompt(
+        new TextPrompt<string>("[bold deepskyblue1]➜[/] ")
+            .PromptStyle(new Style(Color.White))
+            .AllowEmpty());
+}
