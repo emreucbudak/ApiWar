@@ -1,0 +1,16 @@
+namespace ApiWar.Application.Testing;
+
+public static class TestFacadeFactory
+{
+    public static ITestFacade Create(string testType)
+    {
+        ArgumentNullException.ThrowIfNull(testType);
+
+        return testType.ToLowerInvariant() switch
+        {
+            "api" => new ApiTestFacade(),
+            "web" => new WebTestFacade(),
+            _ => throw new ArgumentException("Invalid test type.", nameof(testType)),
+        };
+    }
+}
