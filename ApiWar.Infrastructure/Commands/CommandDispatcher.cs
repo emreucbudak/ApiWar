@@ -4,6 +4,8 @@ namespace ApiWar.Infrastructure.Commands;
 
 public sealed class CommandDispatcher : ICommandDispatcher
 {
+    private bool _isStarted = false;
+
     public string Run(string input)
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(input);
@@ -22,7 +24,12 @@ public sealed class CommandDispatcher : ICommandDispatcher
 
     private string Start()
     {
-        return string.Empty;
+        if (!_isStarted)
+        {
+            _isStarted = true;
+        }
+
+        return "Araç başarıyla başlatıldı. Testlere başlayabilirsiniz.";
     }
 
     private string Help(string parameter)
