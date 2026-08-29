@@ -26,7 +26,6 @@ public sealed class WebTestFacade : ITestFacade
         };
     }
 
-#pragma warning disable CS1998
     public async Task FormAsync()
     {
     }
@@ -42,5 +41,4 @@ public sealed class WebTestFacade : ITestFacade
     public async Task SessionAsync()
     {
     }
-#pragma warning restore CS1998
 }

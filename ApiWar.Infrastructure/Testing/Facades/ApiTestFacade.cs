@@ -26,7 +26,6 @@ public sealed class ApiTestFacade : ITestFacade
         };
     }
 
-#pragma warning disable CS1998
     public async Task AuthenticationAsync()
     {
     }
@@ -42,5 +41,4 @@ public sealed class ApiTestFacade : ITestFacade
     public async Task EndpointAsync()
     {
     }
-#pragma warning restore CS1998
 }
