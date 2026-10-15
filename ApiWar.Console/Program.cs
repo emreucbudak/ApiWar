@@ -31,11 +31,6 @@ AnsiConsole.Write(
         new Markup("[dim]Yalnızca izinli testlerde kullanılmalıdır. Yasa dışı kullanımlardan geliştirici sorumlu değildir.[/]"),
         HorizontalAlignment.Center));
 
-AnsiConsole.Write(
-    new Align(
-        new Markup("Başlamak için [bold deepskyblue1]/başlat[/] yazın."),
-        HorizontalAlignment.Center));
-
 AnsiConsole.WriteLine();
 
 while (true)
