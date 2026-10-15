@@ -10,6 +10,7 @@ public sealed class WebTestFacade : ITestFacade
         "Login",
         "Input",
         "Session",
+        "SQL Injection",
     ];
 
     public IReadOnlyList<string> GetOptions() => Options;
@@ -22,6 +23,7 @@ public sealed class WebTestFacade : ITestFacade
             "Login" => LoginAsync(),
             "Input" => InputAsync(),
             "Session" => SessionAsync(),
+            "SQL Injection" => SqlInjectionAsync(),
             _ => throw new ArgumentException("Invalid web test option.", nameof(selectedOption)),
         };
     }
@@ -39,6 +41,10 @@ public sealed class WebTestFacade : ITestFacade
     }
 
     public async Task SessionAsync()
+    {
+    }
+
+    public async Task SqlInjectionAsync()
     {
     }
 }
